@@ -1,0 +1,200 @@
+body{
+	font-family: 'Kodchasan', sans-serif;
+	color: #333;
+	font-size: 18px;
+	line-height: 24px;
+}
+h1{
+	font-size: 50px;
+	line-height: 1.125;
+    font-family: 'Carter One', system-ui;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Handlee', cursive;
+}
+.Intro{
+	margin: 0 auto;
+	width: 90%;
+	@media (min-width: 500px){
+		width: 80%;
+	}
+	@media (min-width: 600px){
+		width: 60%;
+	}
+}
+main{
+	padding: 1em 0;
+	position: relative;
+	background: #f5f5f5;
+	box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+}
+
+/* --- Important Pen Styles --- */
+
+header{
+	overflow: hidden;
+	/*padding-bottom determines the height of the header*/
+	padding-bottom: 55%;
+	@media (min-width: 600px){
+		padding-bottom: 50%;
+	}
+	@media (min-width: 700px){
+		padding-bottom: 45%;
+	}
+}
+header img{
+	width: 100%;
+	max-width: none;
+	position: fixed;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+* { box-sizing: border-box; }
+body { background: slategray; margin: 0; padding: 3em 1em;}
+ul { list-style: none; margin: 0; padding: 0;}
+figure { margin: 0; }
+figcaption { font-style: italic; font-size: 0.8em; color: grey; line-height: 1.4; }
+
+
+.grid {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-auto-columns: 90%; 
+  grid-gap: 1em;
+  overflow-x: scroll; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 2em 1em;
+  background: white;
+  
+  @media all and (min-width: 600px) {
+    grid-auto-flow: initial; 
+    grid-template-columns: repeat(auto-fit, minmax(auto,20em)); 
+    justify-content: center; 
+  }
+  
+  &__figure {
+    display: grid;
+    grid-template-rows: 15em 1fr; 
+    grid-gap: 1em;
+    
+    img {
+      width: 20%;
+      height: 20%;
+      object-fit: cover; 
+    }
+  }
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: slategray;
+    margin: 0;
+    padding: 3em 1em;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+    color: grey;
+    line-height: 1.4;
+  }
+  
+  .grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 90%;
+    grid-gap: 1em;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 2em 1em;
+    background: white;
+  
+    @media all and (min-width: 600px) {
+      grid-auto-flow: initial;
+      grid-template-columns: repeat(auto-fit, minmax(auto, 20em));
+      justify-content: center;
+    }
+  }
+  
+  .grid__figure {
+    display: grid;
+    grid-template-rows: 15em 1fr;
+    grid-gap: 1em;
+    width: 20em; /* Ajusta el ancho del contenedor de la imagen */
+  
+    img {
+      width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+      height: auto; /* Hace que la imagen sea proporcional y responsiva */
+      object-fit: cover;
+    }
+  }
+  
+/* Agrega este bloque de estilos al final de tu archivo CSS */
+
+footer {
+    background-color: rgb(20, 60, 25);
+    padding: 5vh;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio disponible entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan (wrap) en pantallas más pequeñas */
+}
+
+.social-icon {
+    width: 20%; /* Ajusta el tamaño según sea necesario, por ejemplo, ocupa el 20% del contenedor padre */
+    max-width: 150px; /* Establece un ancho máximo para evitar que las imágenes sean demasiado grandes */
+    height: auto; /* Hace que la imagen sea proporcional y responsiva */
+    margin-bottom: 1em; /* Añade un espacio entre las imágenes para mejorar la apariencia en dispositivos más pequeños */
+}
+
+/* Reglas de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .social-icon {
+        width: 40%; /* Redefine el ancho de las imágenes para pantallas más pequeñas */
+    }
+}
+
+/* Reglas de medios para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .social-icon {
+        width: 80%; /* Redefine el ancho de las imágenes para pantallas muy pequeñas */
+    }
+}
+
+/* Agrega este bloque de estilos al final de tu archivo CSS */
+
+a {
+    color: #add8e6; /* Establece el color azul claro para los hipervínculos */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los hipervínculos */
+    transition: color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+}
+
+a:hover {
+    color: #ffd700; /* Establece el color amarillo para los hipervínculos al pasar el ratón sobre ellos */
+}
+
+/* Alinea las letras con hipervínculos con las imágenes del footer */
+.Intro p a,
+.Intro h2 a {
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+}
